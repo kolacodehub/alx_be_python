@@ -6,18 +6,20 @@ match operation:
     case '+':
         if operation == '+':
             result = num1 + num2
-            print(result)
+            print(f'The result is {result}')
     case '-':
         if operation == '-':
             result = num1 - num2
-            print(result)
+            print(f'The result is {result}')
     case '*':
         if operation == '*':
             result = num1 * num2
-            print(result)
+            print(f'The result is {result}')
     case '/':
         if num1 == 0 or num2 == 0:
-            print('A 0 cant be used')
+            print('Cannot divide by zero.')
         else:
             result = num2 / num1
-            print(result)
+            print(f'The result is {result}')
+    case _:
+        print('Invalid Opration')
